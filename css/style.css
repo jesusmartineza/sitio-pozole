@@ -1,0 +1,336 @@
+/**iniciando con css hoja de tecnicas para textos y mas**/
+
+/* Globales en css */
+html {
+    box-sizing: border-box; /**esto nos sirve para poder manipular mas facil los borders**/
+    font-size: 62.5%; /** reset para REMS - 62.5% = 10px de 16px **/
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit; /**este ayuda tambien a manipular los borders**/
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+}
+
+a {
+    text-decoration: none;
+}
+
+.icono {
+    width: 53px;
+    height: 45px;
+}
+
+.icono-2 img {
+    width: 150px;
+    height: 150px;
+}
+.icono-2 {
+    background-color: #eb5a2c;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 25rem;
+    height: 25rem;
+    margin-top: -16rem;
+    margin-bottom: 2rem;
+}
+
+.estrella {
+    width: 60;
+    height: 60;
+}
+
+/* seccion 1 */
+.inicio {
+    background-image: url(../img/pozole-header.jpeg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 85rem;
+}
+
+.contenedor-header {
+    background-color: rgb(75, 72, 72);
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.navegacion {
+    font-size: 24px;
+    padding-top: 8px;
+}
+
+.navegacion a {
+    padding: 1rem;
+}
+
+.texto-header {
+    text-align: start;
+    margin-top: 18rem;
+    font-size: 2.2rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    color: darkgreen;
+    text-align: justify;
+}
+
+.texto-header h2 {
+    font-size: 6rem;
+    margin-right: 80rem;
+}
+.btn-1 {
+    padding: 1rem 4rem;
+    margin-top: 1rem;
+    justify-content: space-between;
+    margin-left: 4rem;
+    font-size: 3rem;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: none;
+    border: none;
+    background-color: #eb5a2c;
+    color: #fff;
+}
+
+.btn-2 {
+    padding: 1rem 4rem;
+    margin-top: 1rem;
+    justify-content: space-between;
+    margin-left: 3rem;
+    font-size: 3rem;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: none;
+    border: none;
+    background-color: transparent;
+    border: solid #fff;
+    color: #fff;
+}
+
+.tarjetas {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+/* seccion 2 */
+.pozole-main img {
+    width: 25rem;
+    height: 25rem;
+    margin-right: 20rem;
+}
+.main {
+    display: flex;
+    gap: 10rem;
+    margin-bottom: 2rem;
+}
+
+.texto-main h2 {
+    font-size: 3rem;
+    margin-left: 20rem;
+}
+
+.texto-main p {
+    font-size: 2rem;
+    text-align: justify;
+    margin-left: 20rem;
+}
+
+.texto-cuadro {
+    border: solid #eb5a2c;
+    font-size: 2rem;
+    margin: 0 30rem 0 30rem;
+}
+
+/* seccion 3 */
+.galeria {
+    max-width: 100%;
+    margin: 5rem 2rem 2rem 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.galeria-2 img {
+    width: 30rem;
+    height: 30rem;
+}
+
+.galeria-2 .imagen-2 {
+    height: 50rem;
+}
+.galeria-2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    margin-left: 8rem;
+}
+
+.galeria-3 img {
+    width: 50rem;
+    height: 81rem;
+}
+.galeria-3 {
+    margin-left: 2rem;
+}
+
+.galeria-4 img {
+    width: 26.3rem;
+    height: 26.3rem;
+}
+.galeria-4 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    row-gap: 10px;
+    margin-left: 2rem;
+}
+
+/* seccion 4 */
+
+.area-forms {
+    background-image: linear-gradient(to right, #eb5a2c, #fff);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3rem;
+    height: 50rem;
+    margin: 2rem 10rem 2rem 10rem;
+}
+.forms-texto p {
+    font-size: 5rem;
+    padding: 5rem 5rem 5rem 5rem;
+}
+
+.forms {
+    background: rgba(229, 229, 229, 0.5);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    padding: 3rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.forms div {
+    margin-bottom: 3rem;
+}
+
+.forms p {
+    text-align: center;
+    color: rgba(155, 148, 148, 0.8);
+}
+
+.forms-1 {
+    background-color: #eb5a2c;
+    border-radius: 2rem;
+    padding: 2rem 1rem 1rem 1rem;
+    width: 50rem;
+    height: 20px;
+}
+.forms-2 {
+    background-color: #eb5a2c;
+    border-radius: 2rem;
+    padding: 2rem 1rem 1rem 1rem;
+    width: 50rem;
+    height: 20px;
+}
+.forms-3 {
+    background-color: #eb5a2c;
+    border-radius: 2rem;
+    padding: 2rem 1rem 1rem 1rem;
+    width: 50rem;
+    height: 20px;
+}
+
+.btns {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.btns button {
+    border-radius: 2rem;
+    border: none;
+    background-color: #eb5a2c;
+    width: 22rem;
+    height: 5rem;
+    margin-top: 2rem;
+}
+/* seccion 5 */
+.casi-footer img {
+    width: 30rem;
+    height: 30rem;
+    margin-left: 5rem;
+    margin-top: 2rem;
+}
+
+.casi-footer {
+    display: flex;
+    flex-direction: row;
+    gap: 10rem;
+    margin: 2rem 10rem 2rem 10rem;
+}
+
+.footer-text-1 {
+    margin-top: 3rem;
+    font-size: 4rem;
+    margin-left: 3rem;
+}
+
+.footer-text-2 {
+    font-size: 2rem;
+    margin: 1rem 10rem 5rem 2rem;
+    text-align: justify;
+}
+
+.estrella {
+    width: 45px;
+    height: 45px;
+}
+
+.linea-estrellas {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+/* seccion 6 */
+
+.footer {
+    background-color: rgb(75, 72, 72);
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.texto-footer {
+    font-size: 3rem;
+}
+
+.texto-footer-2 {
+    font-size: 2rem;
+    text-align: justify;
+}
+
+.icono-3 {
+    width: 149px;
+    height: 142px;
+    margin-left: 60rem;
+    margin-top: 5rem;
+}
